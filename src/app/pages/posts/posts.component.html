@@ -1,0 +1,32 @@
+<!-- <div class="container">
+
+<button (click)="createPost()">Create Post</button>
+
+{{ newPost | async | json }}
+
+<button (click)="getPosts()">get Posts</button> -->
+
+<!-- <div *ngFor="let post of posts | async"> -->
+<div class="container">
+  <div class="row">
+    <div class="col-3" *ngFor="let post of posts | async">
+      <div class="card">
+        <div class="card-header">
+            <div class="row">
+                <div class="col-8">{{ post.id }}</div>
+                <div class="col-4">
+                    <img class='img' width="20" src="../../../assets/img/chat.svg" alt="comments">
+                    <i (click)="getCommentPosts(post.id)">12</i>
+                </div>
+            </div>
+        </div>
+        <div class="card-body">
+          <h5 class="card-title">{{ post.title }}</h5>
+          <p class="card-text">{{ post.body }}</p>
+          <a href="#" class="btn btn-primary">View more</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- </div> -->
