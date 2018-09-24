@@ -4,10 +4,11 @@ import { HttpClientModule } from '@angular/common/http';
 
 import { AppComponent } from './app.component';
 import { PostsComponent } from '../app/pages/posts/posts.component';
+import { OnePostComponent } from './pages/one-post/one-post.component';
 
 @NgModule({
   declarations: [
-    AppComponent, PostsComponent
+    AppComponent, PostsComponent, OnePostComponent
   ],
   imports: [
     BrowserModule, HttpClientModule
