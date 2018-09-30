@@ -1,0 +1,22 @@
+.card{
+    margin: 10px 0;
+    height: 100%;
+}
+
+.card .img{
+    margin-right: 5px;
+}
+
+.mb-20{
+    margin-bottom: 20px;
+}
+
+.to-bottom{
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+}
+
+.pb-for-btn{
+    padding-bottom: 45px;
+}

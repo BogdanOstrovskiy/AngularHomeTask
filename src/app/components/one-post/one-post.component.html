@@ -1,0 +1,17 @@
+<div class="container">
+  <div class="row">
+    <div class="blog-post">
+      <h1>{{ postData.title }}</h1>
+      <div class="post-body">{{ postData.body }}</div>
+      <div class="post-comments">
+        <h3>Comments ({{ comments.length }}): </h3>
+        <ul class="list-group" *ngFor="let comment of comments">
+          <li class="list-group-item">
+              <div>{{ comment.email }}</div>
+              <div>{{ comment.body }}</div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
