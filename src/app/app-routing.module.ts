@@ -2,7 +2,7 @@ import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { PostsComponent } from './components/posts/posts.component';
 import { OnePostComponent } from './components/one-post/one-post.component';
-
+ 
 const routes: Routes = [
     {
         path: '',
@@ -11,11 +11,17 @@ const routes: Routes = [
     },
     {
         path: 'posts',
-        component: PostsComponent
+        component: PostsComponent,
+        data: {
+            breadcrumb: 'post-list'
+        }
     },
     {
         path: 'post/:postId',
-        component: OnePostComponent
+        component: OnePostComponent,
+        data: {
+            breadcrumb: 'post'
+        }
     }
 ];
 

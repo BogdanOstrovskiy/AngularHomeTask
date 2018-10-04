@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { PostsComponent } from '../app/components/posts/posts.component';
 import { OnePostComponent } from './components/one-post/one-post.component';
 import { AppRoutingModule } from './app-routing.module';
+import { BreadcrumbsModule } from 'ng6-breadcrumbs';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { AppRoutingModule } from './app-routing.module';
   imports: [
     BrowserModule, 
     HttpClientModule,
-    AppRoutingModule
+    AppRoutingModule,
+    BreadcrumbsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
